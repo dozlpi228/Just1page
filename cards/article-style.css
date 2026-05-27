@@ -1,0 +1,74 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.article-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1180px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.sidebar-card {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: rgba(13, 17, 23, 0.92); 
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.sidebar-card h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.sidebar-card p {
+    font-size: 0.85rem;
+    color: #8b949e;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.watch-btn {
+    display: inline-block;
+    background-color: #238636;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.watch-btn:hover {
+    background-color: #2ea043;
+}
+
+.article-text strong {
+    color: #58a6ff;
+    font-weight: 600;
+}
+
+@media (max-width: 950px) {
+    .article-container {
+        flex-direction: column;
+    }
+    .sidebar-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
